@@ -2,15 +2,16 @@
 
 
 **Overview:**  
-The purpose of this script is to capture ports generating CRC or FCS errors in Nexus 9200 & 9300 Cloud Scale switches.  
-Cisco 9000 series switch run in cut-through switching mode, by default. Whenever switch receives corrupt frame, it stomps the packet and keeps forwarding it.  
-If the error gets generated in Nexus switch itself, then it stomps the packet; as well adds FCS Error counter at the end of the packet.  
-If interface only has CRC counters, then it could be because of stomped packets and is usually not the source of error.  
+The purpose of this script is to automate identification of ports generating CRC /FCS errors in Nexus 9200 & 9300 Cloud Scale switches and identify if port is having L1 issue or it's just forwarding stompped packets.
 
----
+Cisco 9000 series switch run in cut-through switching mode, by default. Whenever switch receives corrupt frame, it doesn't drop the frame. Rather it stomps the packet and keeps forwarding it. 
+Thus, multiple interfaces may see CRC errors, however faulty L1 issue may lie with any one interface in the path.
+Various counters needs to be looked upto to isolate problematic Port /SFP /Cable.
+This CRC tracing and identification is now automated for Nexus 9200 & 9300 Cloud Scale switches to ease troubleshooting. 
 
-Know more about Nexus 9000 CRC Tracing at: https://www.cisco.com/c/en/us/support/docs/switches/nexus-9000-series-switches/216239-nexus-9000-cloud-scale-asic-crc-identifi.html#anc12
-
+There are two scripts. 
+Poller script collects interface error counters at timely intervals. 
+Parser script analyses the output collected in first script and generates tabular output with remediation (whether interface is source of the error or is it forwarding already stompped packets).
 
 
 ---
@@ -153,7 +154,7 @@ Sample Execution and Output table for switch running on version < 10.2::
 <img width="1200" alt="image" src="https://user-images.githubusercontent.com/93187517/190980372-c88e4c8b-f186-4a9b-8d61-f11e4df33550.png">
 
 
-** Reference Documents:**
+**Reference Documents:**
 For further logical understanding of N9K CRC troubleshooting, refer: https://www.cisco.com/c/en/us/support/docs/switches/nexus-9000-series-switches/216239-nexus-9000-cloud-scale-asic-crc-identifi.html#anc12
 
 ---
