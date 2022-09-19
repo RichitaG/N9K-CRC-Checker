@@ -28,7 +28,8 @@ Know more about Nexus 9000 CRC Tracing at: https://www.cisco.com/c/en/us/support
         2. Open terminal window  
         3. Navigate to folder where requirements.txt is located and run below command:  
             #pip install -r Nexus_CRC_requirements.txt  
-          
+        
+	
 	rgajjar@RGAJJAR-M-925B NEXUS_CRC_Latest % pip3 install -r NEXUS_CRC_Requirements.txt                                        
 	Defaulting to user installation because normal site-packages is not writeable
 	Collecting DateTime==4.3
