@@ -124,7 +124,7 @@ _Make sure you have all the pre-requisites installed in system_
 
 	4. If there are no errors in the domain, it will ask if user still wants to continue and collect data once more
 
-	<img width="1200" alt="image" src="https://user-images.githubusercontent.com/93187517/190986443-68772681-29b7-443e-a1aa-b37f308fdd54.png">
+<img width="1200" alt="image" src="https://user-images.githubusercontent.com/93187517/190986443-68772681-29b7-443e-a1aa-b37f308fdd54.png">
 
 
 		   	
@@ -143,15 +143,14 @@ _Keep your terminal sesssion font resolution to 100% for proper tabular output v
 	
 Sample Execution and Output table for switch running on version >=10.2:
         
-	<img width="1200" alt="image" src="https://user-images.githubusercontent.com/93187517/190986125-73094471-2be4-4cc5-87fa-1cc5b10450d1.png">
+<img width="1200" alt="image" src="https://user-images.githubusercontent.com/93187517/190986125-73094471-2be4-4cc5-87fa-1cc5b10450d1.png">
 
 	
 
 Sample Execution and Output table for switch running on version < 10.2::
 
 	
-   
-   <img width="1200" alt="image" src="https://user-images.githubusercontent.com/93187517/190980372-c88e4c8b-f186-4a9b-8d61-f11e4df33550.png">
+<img width="1200" alt="image" src="https://user-images.githubusercontent.com/93187517/190980372-c88e4c8b-f186-4a9b-8d61-f11e4df33550.png">
 
 
 ** Reference Documents:**
