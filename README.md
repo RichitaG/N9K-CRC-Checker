@@ -31,7 +31,7 @@ Know more about Nexus 9000 CRC Tracing at: https://www.cisco.com/c/en/us/support
 	    
 	    EXAMPLE:
 	    
-	    rgajjar@RGAJJAR-M-925B NEXUS_CRC_Latest % pip3 install -r NEXUS_CRC_Requirements.txt    
+	    admin@TEST-JUMP NEXUS_CRC_Latest % pip3 install -r NEXUS_CRC_Requirements.txt    
 	    Defaulting to user installation because normal site-packages is not writeable
 		Collecting DateTime==4.3
 		  Using cached DateTime-4.3-py2.py3-none-any.whl (60 kB)
@@ -47,6 +47,24 @@ Know more about Nexus 9000 CRC Tracing at: https://www.cisco.com/c/en/us/support
 
 		Successfully installed DateTime-4.3 numpy-1.21.2 pandas-1.3.2 paramiko-2.7.2 python-dateutil-2.8.2 stdiomask-0.0.5 tabulate-0.8.9 termcolor-1.1.0  
 
+---
+	EXAMPLE:
+	    
+	    admin@TEST-JUMP NEXUS_CRC_Latest % pip3 install -r NEXUS_CRC_Requirements.txt    
+	    Defaulting to user installation because normal site-packages is not writeable
+		Collecting DateTime==4.3
+		  Using cached DateTime-4.3-py2.py3-none-any.whl (60 kB)
+		Collecting numpy==1.21.2
+		  Using cached numpy-1.21.2-cp38-cp38-macosx_10_9_x86_64.whl (16.9 MB)
+		Collecting pandas==1.3.2
+		  Using cached pandas-1.3.2-cp38-cp38-macosx_10_9_x86_64.whl (11.4 MB)
+		Collecting paramiko==2.7.2
+		  Using cached paramiko-2.7.2-py2.py3-none-any.whl (206 kB)
+		Collecting python-dateutil==2.8.2
+
+		. . . .
+
+		Successfully installed DateTime-4.3 numpy-1.21.2 pandas-1.3.2 paramiko-2.7.2 python-dateutil-2.8.2 stdiomask-0.0.5 tabulate-0.8.9 termcolor-1.1.0 
 	    
 	
 	
