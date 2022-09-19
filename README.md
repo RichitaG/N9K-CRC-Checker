@@ -115,7 +115,7 @@ _Make sure you have all the pre-requisites installed in system_
 
             
         3. Duration for which you want to run the script:  
-                Maximum allowed duration is upto seven days
+        	Maximum allowed duration is upto seven days
 		Minimum one should run for atleast 30minutes to collect CRC differencial counters and error increments
     **Script collects Interface errors every 10 to 30 minutes and saves data to files at the path specified in earlier input. It will collect data for the duration given in this input**  
     
