@@ -26,23 +26,11 @@ Know more about Nexus 9000 CRC Tracing at: https://www.cisco.com/c/en/us/support
         2. Open terminal window  
         3. Navigate to folder where requirements.txt is located and run below command:  
             #pip install -r Nexus_CRC_requirements.txt  
----	    
-	    **EXAMPLE:**
-	    
-	    admin@TEST-JUMP NEXUS_CRC_Latest % pip3 install -r NEXUS_CRC_Requirements.txt <<<<<<<<    
-	    Defaulting to user installation because normal site-packages is not writeable
-		Collecting DateTime==4.3
-		  Using cached DateTime-4.3-py2.py3-none-any.whl (60 kB)
-		Collecting numpy==1.21.2
-		  Using cached numpy-1.21.2-cp38-cp38-macosx_10_9_x86_64.whl (16.9 MB)
-		Collecting pandas==1.3.2
-		  Using cached pandas-1.3.2-cp38-cp38-macosx_10_9_x86_64.whl (11.4 MB)
-		Collecting paramiko==2.7.2
-		  Using cached paramiko-2.7.2-py2.py3-none-any.whl (206 kB)
-		Collecting python-dateutil==2.8.2
 
-		. . . .
+<img width="1200" alt="image" src="https://user-images.githubusercontent.com/93187517/190986614-69172f23-d9af-42ae-98b2-b9416c6280e6.png">
 
+
+	Upon successful installation, it shows message as below:
 		Successfully installed DateTime-4.3 numpy-1.21.2 pandas-1.3.2 paramiko-2.7.2 python-dateutil-2.8.2 stdiomask-0.0.5 tabulate-0.8.9 termcolor-1.1.0  
 
 
@@ -111,14 +99,7 @@ _Make sure you have all the pre-requisites installed in system_
     Inputs:
         1. Nexus Switch IP /FQDN, Username and password
         
-	admin@TEST-JUMP NEXUS_CRC_Latest %  python3 NEXUS_CRC_POLLER.py <<<<<<<<
-	Enter the IP address of Switch: 10.78.51.89 <<<<<<<<
-	__________________________________________________________
-	Enter the username: admin
-	___________________________________________________________
-	Enter the password: ********* <<<<<<<<
-	Trying to connect to Nexus...
-	Connection established to the Nexus
+	<img width="452" alt="image" src="https://user-images.githubusercontent.com/93187517/190986559-fbe17894-9202-44cc-a773-b1f0df071043.png">
 
 
         2. Path to the folder where you want to save files  
@@ -128,17 +109,7 @@ _Make sure you have all the pre-requisites installed in system_
                     MAC -> /Users/admin/Desktop/Nexus/  
     **PLEASE NOTE that data collection and script execution might get impacted if folder format is not as above. Also make sure that folder where you want to save files already exists**  
 
-	___________________________________________________________
-	Please enter the folder where files have to be stored
-	_____________________________________________________________
-	VALID folder format:
-	EXAMPLE:
-	Windows-> C:\Users\Admin\Desktop\CRC_NEXUS\
-	MAC -> /User/admin/Desktop/CRC_NEXUS/
-	---------------------------------------------------------------------------------------------------
-	PLEASE NOTE that data collection and script execution might get impacted if folder format is not as below
-	--------------------------------------------------------------------------------------------------------
-	Enter the absolute path of the folder where the files have to be stored:/Users/admin/Desktop/CRC_NEXUS/ <<<<<<<<
+	<img width="1200" alt="image" src="https://user-images.githubusercontent.com/93187517/190986526-08c212b8-1d9a-419d-8b80-5126f09dd41a.png">
 
 
             
@@ -147,21 +118,14 @@ _Make sure you have all the pre-requisites installed in system_
 		Minimum one should run for atleast 30minutes to collect CRC differencial counters and error increments
     **Script collects Interface errors every 10 to 30 minutes and saves data to files at the path specified in earlier input. It will collect data for the duration given in this input**  
     
-	----------------------------------------------------------------
-	Enter the End Time until which the script runs(in the format of yyyy-mm-dd hh:mm, current time:2022-09-15 17:26....  maximum upto 2022-09-22 17:26): 2022-09-15 18:00 <<<<<<<<<<<<<<
-	___________________________________________________________
-	Model : N9K-C9236C
-	Version : 10.2(3)
-	HostName : Switch 
+	<img width="1200" alt="image" src="https://user-images.githubusercontent.com/93187517/190986474-ea4acddf-972a-4b56-8bea-6d2a404e1162.png">
 
-	Collecting data....
 
 
 	4. If there are no errors in the domain, it will ask if user still wants to continue and collect data once more
 
-	No errors in the Switch, do you still want to run the script(y/n):y <<<<<<<<<<<<<<<
-	Script will only generate files if errors are generated in given time range of script execution
-	Collecting data....
+	<img width="1200" alt="image" src="https://user-images.githubusercontent.com/93187517/190986443-68772681-29b7-443e-a1aa-b37f308fdd54.png">
+
 
 		   	
 **Script-2:**  
@@ -175,82 +139,17 @@ _Keep your terminal sesssion font resolution to 100% for proper tabular output v
     Inputs:  
     1.	Enter the same file location, where you have collected data from Script-1.
 
+	Enter the absolute path of the folder where the files are stored:/Users/rgajjar/Desktop/CRC_NEXUS/ <<<<<<<
+	
+Sample Execution and Output table for switch running on version >=10.2:
         
-	admin@TEST-JUMP NEXUS_CRC_Latest % python3 NEXUS_CRC_PARSER.py
-	Please enter the folder where files are stored
-	Please make sure we have at least two files exists in the directory where you have saved data 
-	_____________________________________________________________
-	VALID folder format:
-	EXAMPLE:
-	Windows-> C:\Users\Admin\Desktop\CRC\
-	MAC -> /Users/admin/Desktop/CRC/
-	--------------------------------------------------------------------------------------------
-	PLEASE NOTE that data collection and script execution might get impacted if folder format is not as above
-	--------------------------------------------------------------------------------------------------------
-	Enter the absolute path of the folder where the files are stored:/Users/rgajjar/Desktop/CRC_NEXUS/ <<<<<<<
-	___________________________________________________________
-	You have CRC files for the below date range
-	1.2022-08-18
-	Fetching first and last file of the same date 20220818
-	CRC_20220818_1615.txt
-	CRC_20220818_1630.txt
-	__________________________________________________________
-	The script is executing.....
-	Version: 10.2(3)
-	Hostname: Switch
+	<img width="1200" alt="image" src="https://user-images.githubusercontent.com/93187517/190986125-73094471-2be4-4cc5-87fa-1cc5b10450d1.png">
 
-	+---------+-------------+-----------+--------------+-----------+-------------------+------------------------------------------------------------+
-	|         |   Align-Err |   FCS-Err |   StompedCRC |   eth_crc |   eth_stomped_crc | Remediation                                                |
-	+=========+=============+===========+==============+===========+===================+============================================================+
-	| Eth1/14 |           0 |         0 |            0 |       345 |               673 | Please ignore.                                             |
-	|         |             |           |              |           |                   | These are Stomped errors received from Remote end.         |
-	+---------+-------------+-----------+--------------+-----------+-------------------+------------------------------------------------------------+
-	| Eth1/18 |           0 |         0 |            0 |       653 |               236 | It is physical layer problem.                              |
-	|         |             |           |              |           |                   | Please Check for SFP and cabling.                          |
-	+---------+-------------+-----------+--------------+-----------+-------------------+------------------------------------------------------------+
-	| Eth1/24 |         384 |         0 |           25 |         0 |                 0 | This could be Physical Link Issue, SFP Issue or MTU Issue. |
-	|         |             |           |              |           |                   | Contact Cisco TAC to troubleshoot further.                 |
-	+---------+-------------+-----------+--------------+-----------+-------------------+------------------------------------------------------------+
-	admin@TEST-JUMP NEXUS_CRC_Latest % 
+	
 
+Sample Execution and Output table for switch running on version < 10.2::
 
-Output table for switch running on version less than 10.2 looks like below:
-
-	admin@TEST-JUMP NEXUS_CRC_Latest % python3 NEXUS_CRC_PARSER.py
-	Please enter the folder where files are stored
-	Please make sure we have at least two files exists in the directory where you have saved data 
-	_____________________________________________________________
-	VALID folder format:
-	EXAMPLE:
-	Windows-> C:\Users\Admin\Desktop\CRC\
-	MAC -> /Users/admin/Desktop/CRC/
-	--------------------------------------------------------------------------------------------
-	PLEASE NOTE that data collection and script execution might get impacted if folder format is not as above
-	--------------------------------------------------------------------------------------------------------
-	Enter the absolute path of the folder where the files are stored:/Users/rgajjar/Desktop/CRC_NEXUS/ <<<<<<<
-	___________________________________________________________
-	You have CRC files for the below date range
-	1.2022-09-11
-	Fetching first and last file of the same date 20220911
-	CRC_20220911_1115.txt
-	CRC_20220911_1132.txt
-	__________________________________________________________
-	The script is executing.....
-	Version: 9.2(3)
-	Hostname: Switch
-
-+--------+----------------+-------+-------------+-----------+--------------------------+----------------------------+------------------------------------------------------------+
-|        |   input_errors |   crc |   Align-Err |   FCS-Err |   02-RX Frm with FCS Err |   16-RX Frm CRC Err(Stomp) | Remediation                                                |
-+========+================+=======+=============+===========+==========================+============================+============================================================+
-| Eth1/5 |            252 |     0 |           0 |      3534 |                     8635 |                       6455 | It is a physical layer problem.                            |
-|        |                |       |             |           |                          |                            | Please Check for SFP and cabling                           |
-+--------+----------------+-------+-------------+-----------+--------------------------+----------------------------+------------------------------------------------------------+
-| Eth1/7 |            234 |   275 |         273 |         0 |                        0 |                       5344 | Please ignore.                                             |
-|        |                |       |             |           |                          |                            | These are Stomped errors received from Remote end.         |
-+--------+----------------+-------+-------------+-----------+--------------------------+----------------------------+------------------------------------------------------------+
-| Eth1/9 |            535 |     0 |         935 |         0 |                        0 |                          0 | This could be Physical Link Issue, SFP Issue or MTU Issue. |
-|        |                |       |             |           |                          |                            | Contact Cisco TAC to troubleshoot further.                 |
-+--------+----------------+-------+-------------+-----------+--------------------------+----------------------------+------------------------------------------------------------+
+	
    
    <img width="1200" alt="image" src="https://user-images.githubusercontent.com/93187517/190980372-c88e4c8b-f186-4a9b-8d61-f11e4df33550.png">
 
@@ -276,7 +175,7 @@ For further logical understanding of N9K CRC troubleshooting, refer: https://www
 - v1.0  
 
 **Date:**  
-- 22nd Aug, 2022  
+- 19th Sep, 2022  
 
 **Disclaimer:**  
 - Code provided as-is.  No warranty implied or included.  Use the code for production at your own risk.
