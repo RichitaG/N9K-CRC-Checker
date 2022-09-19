@@ -252,7 +252,7 @@ Output table for switch running on version less than 10.2 looks like below:
 |        |                |       |             |           |                          |                            | Contact Cisco TAC to troubleshoot further.                 |
 +--------+----------------+-------+-------------+-----------+--------------------------+----------------------------+------------------------------------------------------------+
    
-   <img width="452" alt="image" src="https://user-images.githubusercontent.com/93187517/190980372-c88e4c8b-f186-4a9b-8d61-f11e4df33550.png">
+   <img width="1200" alt="image" src="https://user-images.githubusercontent.com/93187517/190980372-c88e4c8b-f186-4a9b-8d61-f11e4df33550.png">
 
 
 ** Reference Documents:**
