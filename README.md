@@ -99,7 +99,7 @@ _Make sure you have all the pre-requisites installed in system_
     Inputs:
         1. Nexus Switch IP /FQDN, Username and password
         
-	<img width="452" alt="image" src="https://user-images.githubusercontent.com/93187517/190986559-fbe17894-9202-44cc-a773-b1f0df071043.png">
+<img width="452" alt="image" src="https://user-images.githubusercontent.com/93187517/190986559-fbe17894-9202-44cc-a773-b1f0df071043.png">
 
 
         2. Path to the folder where you want to save files  
@@ -109,7 +109,7 @@ _Make sure you have all the pre-requisites installed in system_
                     MAC -> /Users/admin/Desktop/Nexus/  
     **PLEASE NOTE that data collection and script execution might get impacted if folder format is not as above. Also make sure that folder where you want to save files already exists**  
 
-	<img width="1200" alt="image" src="https://user-images.githubusercontent.com/93187517/190986526-08c212b8-1d9a-419d-8b80-5126f09dd41a.png">
+<img width="1200" alt="image" src="https://user-images.githubusercontent.com/93187517/190986526-08c212b8-1d9a-419d-8b80-5126f09dd41a.png">
 
 
             
@@ -118,7 +118,7 @@ _Make sure you have all the pre-requisites installed in system_
 		Minimum one should run for atleast 30minutes to collect CRC differencial counters and error increments
     **Script collects Interface errors every 10 to 30 minutes and saves data to files at the path specified in earlier input. It will collect data for the duration given in this input**  
     
-	<img width="1200" alt="image" src="https://user-images.githubusercontent.com/93187517/190986474-ea4acddf-972a-4b56-8bea-6d2a404e1162.png">
+<img width="1200" alt="image" src="https://user-images.githubusercontent.com/93187517/190986474-ea4acddf-972a-4b56-8bea-6d2a404e1162.png">
 
 
 
