@@ -26,7 +26,7 @@ Know more about Nexus 9000 CRC Tracing at: https://www.cisco.com/c/en/us/support
         2. Open terminal window  
         3. Navigate to folder where requirements.txt is located and run below command:  
             #pip install -r Nexus_CRC_requirements.txt  
-	    
+---	    
 	    **EXAMPLE:**
 	    
 	    admin@TEST-JUMP NEXUS_CRC_Latest % pip3 install -r NEXUS_CRC_Requirements.txt <<<<<<<<    
@@ -252,6 +252,8 @@ Output table for switch running on version less than 10.2 looks like below:
 |        |                |       |             |           |                          |                            | Contact Cisco TAC to troubleshoot further.                 |
 +--------+----------------+-------+-------------+-----------+--------------------------+----------------------------+------------------------------------------------------------+
    
+   <img width="452" alt="image" src="https://user-images.githubusercontent.com/93187517/190980372-c88e4c8b-f186-4a9b-8d61-f11e4df33550.png">
+
 
 ** Reference Documents:**
 For further logical understanding of N9K CRC troubleshooting, refer: https://www.cisco.com/c/en/us/support/docs/switches/nexus-9000-series-switches/216239-nexus-9000-cloud-scale-asic-crc-identifi.html#anc12
