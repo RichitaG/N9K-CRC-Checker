@@ -1,4 +1,4 @@
-# Nexus9K-FCS-CRC Checker
+# Nexus9K CRC Checker
 
 
 **Overview:**  
@@ -95,7 +95,7 @@ _Make sure you have all the pre-requisites installed in system_
 
 **Script-1:**  
 
-    Execute " Nexus_CRC_Poller.py" to collect Interface errors in domain.  
+    Execute " NEXUS_CRC_POLLER.py" to collect Interface errors in domain.  
         
     Inputs:
         1. Nexus Switch IP /FQDN, Username and password
@@ -132,7 +132,7 @@ _Make sure you have all the pre-requisites installed in system_
 **Script-2:**  
 _Keep your terminal sesssion font resolution to 100% for proper tabular output view_
 
-    "Nexus_CRC_Parser.py" will analyse the data and give you tabular output with interfaces having error and will also provide remediation actions.
+    "NEXUS_CRC_PARSER.py" will analyse the data and give you tabular output with interfaces having error and will also provide remediation actions.
     Script-2 execution should be started once we at-least have two files to compare data.
     i.e. script-2 execution should be started after approx 30 minutes of script-1 execution.  
      Script-2 is going to use those files created by script-1 and work further.
