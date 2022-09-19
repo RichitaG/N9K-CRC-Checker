@@ -1,5 +1,3 @@
-# N9K-CRC-Checker
-
 # Nexus9K-FCS-CRC Checker
 
 
