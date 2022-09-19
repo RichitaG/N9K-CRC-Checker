@@ -119,8 +119,6 @@ _Make sure you have all the pre-requisites installed in system_
 		Minimum one should run for atleast 30minutes to collect CRC differencial counters and error increments
     **Script collects Interface errors every 10 to 30 minutes and saves data to files at the path specified in earlier input. It will collect data for the duration given in this input**  
     
-<img width="1200" alt="image" src="https://user-images.githubusercontent.com/93187517/190986474-ea4acddf-972a-4b56-8bea-6d2a404e1162.png">
-
 <img width="1170" alt="image" src="https://user-images.githubusercontent.com/93187517/191009817-76ea0179-30d5-4707-b378-bfdc24310f76.png">
 
 
