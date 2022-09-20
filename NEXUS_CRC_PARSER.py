@@ -25,9 +25,10 @@ Script Tested on:
     MAC Monterey
 Authors:
     Partha Dasgupta padasgup@cisco.com
-	Narendra Yerra nyerra@cisco.com
-	R Likitha llikitha@cisco.com
-	Richita Gajjar rgajjar@cisco.com
+    Richita Gajjar rgajjar@cisco.com
+    Narendra Yerra nyerra@cisco.com
+    R Likitha llikitha@cisco.com
+	
 '''
 
 import os
