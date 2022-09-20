@@ -163,9 +163,9 @@ For further logical understanding of N9K CRC troubleshooting, refer: https://www
 
 **Contributors:** 
 - Partha Dasgupta <padasgup@cisco.com>
+- Richita Gajjar <rgajjar@cisco.com>
 - Narendra Yerra <nyerra@cisco.com>
 - R Likitha <llikitha@cisco.com>
-- Richita Gajjar <rgajjar@cisco.com>
 
 
 **Company:**  
